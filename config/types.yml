@@ -36,9 +36,9 @@ types:
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
     # Endpoints that are used by the router: #
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-    hello_world_endpoint:
+    homepage_endpoint:
         package: github.com/fgrosse/servo-example/endpoints
-        func:    HelloWorldEndpoint
+        func:    HomepageEndpoint
 
     greet_user_endpoint:
         package: github.com/fgrosse/servo-example/endpoints

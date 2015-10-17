@@ -22,7 +22,7 @@ func RegisterTypes(types goldi.TypeRegistry) {
 		"custom_error_handler":          goldi.NewStructType(new(lib.MyErrorHandler)),
 		"error_endpoint":                goldi.NewFuncReferenceType("my_controller", "ErrorAction"),
 		"greet_user_endpoint":           goldi.NewFuncType(endpoints.GreetUserEndpoint),
-		"hello_world_endpoint":          goldi.NewFuncType(endpoints.HelloWorldEndpoint),
+		"homepage_endpoint":             goldi.NewFuncType(endpoints.HomepageEndpoint),
 		"kernel.http_handler":           goldi.NewType(handler.MiddleWareAdapter, "@servo.routing.router", "@my_app.error_handler", "@my_app.logging_adapter"),
 		"my_app.error_handler":          goldi.NewType(middleware.ErrorHandlingAdapter, "@custom_error_handler::HandleEndpointError"),
 		"my_app.logging_adapter":        goldi.NewType(middleware.LoggingAdapter, "@my_logger"),

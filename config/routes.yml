@@ -1,4 +1,4 @@
-hello_world_endpoint:
+homepage_endpoint:
     path: /
 
 greet_user_endpoint:
