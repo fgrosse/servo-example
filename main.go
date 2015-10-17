@@ -5,7 +5,7 @@ import (
 
 	"github.com/fgrosse/servo"
 	"github.com/fgrosse/servo-logxi"
-	"github.com/fgrosse/servo/bundles/routing"
+	"github.com/fgrosse/servo-gorilla/routing"
 	"github.com/fgrosse/servo/configuration"
 )
 
