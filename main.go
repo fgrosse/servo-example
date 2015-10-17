@@ -11,7 +11,7 @@ import (
 
 func main() {
 	loader := configuration.NewYAMLFileLoader("config/config.yml")
-	kernel := servo.NewDebugKernel(loader)
+	kernel := servo.NewKernel(loader)
 	kernel.Register(new(logxi.Bundle))
 	kernel.Register(new(routing.Bundle))
 
